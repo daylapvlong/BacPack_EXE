@@ -30,7 +30,7 @@ const Features = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 items-center">
             {/* Feature Details Column */}
-            <dl className="space-y-10">
+            <dl className="space-y-10 sm:pb-10">
               {featuresList.map((feature) => (
                 <div key={feature.name} className="relative flex">
                   <dt className="flex justify-center items-center">

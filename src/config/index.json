@@ -25,7 +25,7 @@
   "mainHero": {
     "title": "Welcome to",
     "subtitle": "BacPack.",
-    "description": "It  is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "description": "where we deliver top-quality, locally-made beef jerky straight to your door. We believe in supporting local farmers and providing our customers with fresh, delicious jerky in three unique package options. Each batch is crafted with care to ensure that you experience the best flavor and texture in every bite. Explore our offerings and taste the difference that comes from locally sourced, responsibly made products. BacPack isn’t just a snack, it’s a commitment to quality and community.",
     "img": "/assets/images/background.jpg",
     "primaryAction": {
       "text": "About us",
@@ -46,7 +46,7 @@
       },
       {
         "title": "Unmatched Taste",
-        "description": "With the spiciness of chili combined with the heat of ginger, along with the seasoning of local seeds and the smoky aroma of firewood, these elements create the distinctive flavor of Tây Bắc's traditional smoked buffalo meat. When talking about buffalo meat from the Tây Bắc region, one must mention BacPack's smoked buffalo meat, a prime representation of this region's specialty",
+        "description": "With the spiciness of chili combined with the heat of ginger, along with the seasoning of local seeds and the smoky aroma of firewood, these elements create the distinctive flavor of Tây Bắc's traditional smoked buffalo meat. When talking about buffalo meat from the Tây Bắc region, one must mention BacPack's smoked buffalo meat, a prime representation of this region's specialty.",
         "img": "/assets/images/trau2.jpg"
       }
     ]
