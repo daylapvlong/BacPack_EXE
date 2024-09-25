@@ -1,0 +1,154 @@
+{
+  "company": {
+    "name": "React landing page 2021",
+    "logo": "/assets/images/bacpack-removebg.png"
+  },
+  "navigation": [
+    {
+      "name": "Product",
+      "href": "product"
+    },
+    {
+      "name": "About",
+      "href": "features"
+    },
+
+    {
+      "name": "Pricing",
+      "href": "pricing"
+    },
+    {
+      "name": "About",
+      "href": "about"
+    }
+  ],
+  "callToAction": {
+    "text": "Get started",
+    "href": "#"
+  },
+  "mainHero": {
+    "title": "Welcome to",
+    "subtitle": "BacPack.",
+    "description": "It  is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "img": "/assets/images/background.jpg",
+    "primaryAction": {
+      "text": "About us",
+      "href": "/"
+    },
+    "secondaryAction": {
+      "text": "About our Pricing",
+      "href": "/"
+    }
+  },
+  "product": {
+    "title": "About our buffalo jerky",
+    "items": [
+      {
+        "title": "Artisanal Quality",
+        "description": " We specialize in producing high-quality, traditionally smoked buffalo meat using time-honored methods passed down through generations. The craftsmanship behind Tây Bắc's smoked buffalo meat is rooted in tradition and skill. Each step of the process, from the meticulous preparation to the slow smoking, requires deep knowledge and hands-on expertise. This attention to detail and respect for traditional methods makes our smoked buffalo meat not just a product, but a reflection of cultural heritage and craftsmanship that has been preserved through time.",
+        "img": "/assets/images/trau_no_logo.jpg"
+      },
+      {
+        "title": "Unmatched Taste",
+        "description": "With the spiciness of chili combined with the heat of ginger, along with the seasoning of local seeds and the smoky aroma of firewood, these elements create the distinctive flavor of Tây Bắc's traditional smoked buffalo meat. When talking about buffalo meat from the Tây Bắc region, one must mention BacPack's smoked buffalo meat, a prime representation of this region's specialty",
+        "img": "/assets/images/product2.jpg"
+      }
+    ]
+  },
+  "features": {
+    "title": "BacPack story",
+    "subtitle": "A small start up with big goals!",
+    "subtitle2": "Our Mission",
+    "description": "Our startup is dedicated to preserving and sharing the rich culinary heritage of Vietnam's Tây Bắc region. By combining locally sourced ingredients with expert craftsmanship, we deliver an authentic taste experience that embodies the flavors of the mountains. Our mission is to bring this unique, artisanal delicacy to food lovers everywhere, while supporting local farmers and promoting sustainable practices.",
+    "items": [
+      {
+        "name": "Promote and Showcase Culture and Craftsmanship",
+        "description": "To introduce and celebrate the rich, diverse, and authentic flavors of Vietnamese cuisine to a global audience.",
+        "icon": "/assets/images/tick.png"
+      },
+      {
+        "name": "Certified High-Quality, Locally Sourced Ingredients",
+        "description": "To provide certified high-quality, locally sourced ingredients that highlight regional specialties and authentic flavors. Supporting local farmers, sustainable practices, and fair trade.",
+        "icon": "/assets/images/tick.png"
+      },
+      {
+        "name": "Inspire and Delight Customers",
+        "description": "To inspire and delight customers through distinctive and meaningful culinary experiences that reflect the essence of Vietnamese cuisine.",
+        "icon": "/assets/images/tick.png"
+      },
+      {
+        "name": "Celebrate and Promote Local Artisans",
+        "description": "To celebrate and promote local Vietnamese artisans and producers, ensuring their traditions and skills are preserved and appreciated.",
+        "icon": "/assets/images/tick.png"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "items": [
+      {
+        "name": "300gr",
+        "price": "280,000 VNĐ",
+        "priceDetails": "",
+        "features": [
+          "Basic Package",
+          "Basic resealable pouch",
+          "Premium locally sourced meat",
+          "Ideal for individual snacking"
+        ]
+      },
+      {
+        "name": "500gr",
+        "price": "450,000 VNĐ",
+        "priceDetails": "",
+
+        "features": [
+          "Best seller",
+          "Premium resealable pouch",
+          "Premium locally sourced meat",
+          "Perfect for sharing or gifting"
+        ]
+      },
+      {
+        "name": "1000gr",
+        "price": "820,000 VNĐ",
+        "priceDetails": "",
+        "features": [
+          "Bang for bucks",
+          "Deluxe packaging",
+          "Premium locally sourced meat",
+          "Best value for families or large gatherings"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/profile.php?id=61565852317212",
+      "instagram": "https://www.instagram.com/bacpack6/",
+      "zalo": "#"
+    }
+  }
+}
