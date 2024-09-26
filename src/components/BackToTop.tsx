@@ -1,8 +1,9 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { ArrowUpCircle } from 'lucide-react'
+
 import { motion, AnimatePresence } from 'framer-motion'
+import { ArrowUpCircle } from 'lucide-react'
 
 export default function BackToTopButton() {
   const [isVisible, setIsVisible] = useState(false)

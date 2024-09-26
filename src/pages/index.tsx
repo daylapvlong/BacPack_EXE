@@ -2,6 +2,7 @@ import React from 'react';
 
 import About from '../components/About';
 import Analytics from '../components/Analytics';
+import BackToTopButton from '../components/BackToTop';
 import Features from '../components/Features';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
@@ -9,7 +10,6 @@ import MainHero from '../components/MainHero';
 import MainHeroImage from '../components/MainHeroImage';
 import Pricing from '../components/Pricing';
 import Product from '../components/Product';
-import BackToTopButton from '../components/BackToTop';
 
 const App = () => {
   return (
