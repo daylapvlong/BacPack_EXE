@@ -1,119 +1,117 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Trang đích React 2021",
     "logo": "/assets/images/bacpack-removebg.png"
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "Sản phẩm",
       "href": "product"
     },
     {
-      "name": "About",
+      "name": "Về chúng tôi",
       "href": "features"
     },
-
     {
-      "name": "Pricing",
+      "name": "Giá cả",
       "href": "pricing"
     }
   ],
   "callToAction": {
-    "text": "Get started",
+    "text": "Bắt đầu ngay",
     "href": "#"
   },
   "mainHero": {
-    "title": "Welcome to",
+    "title": "Chào mừng đến với",
     "subtitle": "BacPack.",
-    "description": "Where we deliver top-quality, locally-made beef jerky straight to your door. We believe in supporting local farmers and providing our customers with fresh, delicious jerky in three unique package options. Each batch is crafted with care to ensure that you experience the best flavor and texture in every bite. Explore our offerings and taste the difference that comes from locally sourced, responsibly made products. BacPack isn’t just a snack, it’s a commitment to quality and community.",
+    "description": "Nơi chúng tôi cung cấp thịt bò khô chất lượng cao, được làm từ nông trại địa phương, giao tận tay bạn. Mỗi lô được chế biến cẩn thận để đảm bảo bạn thưởng thức hương vị và kết cấu tốt nhất trong từng miếng. Khám phá các sản phẩm của chúng tôi và cảm nhận sự khác biệt đến từ các sản phẩm được làm từ nguồn nguyên liệu địa phương. BacPack không chỉ là một nơi bán món ăn vặt, mà là cam kết về chất lượng và cộng đồng.",
     "img": "/assets/images/background.jpg",
     "primaryAction": {
-      "text": "About us",
+      "text": "Về chúng tôi",
       "href": "/"
     },
     "secondaryAction": {
-      "text": "About our Pricing",
+      "text": "Giới thiệu về giá cả",
       "href": "/"
     }
   },
   "product": {
-    "title": "About our buffalo jerky",
+    "title": "Về sản phẩm của chúng tôi",
     "items": [
       {
-        "title": "Artisanal Quality",
-        "description": " We specialize in producing high-quality, traditionally smoked buffalo meat using time-honored methods passed down through generations. The craftsmanship behind Tây Bắc's smoked buffalo meat is rooted in tradition and skill. Each step of the process, from the meticulous preparation to the slow smoking, requires deep knowledge and hands-on expertise. This attention to detail and respect for traditional methods makes our smoked buffalo meat not just a product, but a reflection of cultural heritage and craftsmanship that has been preserved through time.",
+        "title": "Chất lượng thủ công",
+        "description": "Chúng tôi chuyên sản xuất thịt trâu khô được hun khói truyền thống bằng các phương pháp được truyền qua nhiều thế hệ. Nghệ thuật làm thịt trâu khô Tây Bắc là sự kết hợp giữa truyền thống và kỹ năng. Từ khâu chuẩn bị tỉ mỉ đến quá trình hun khói chậm, mọi công đoạn đều đòi hỏi sự am hiểu sâu sắc và kinh nghiệm thực tiễn. Sự tỉ mỉ này đã làm cho sản phẩm của chúng tôi không chỉ là một món ăn, mà còn là biểu tượng của di sản văn hóa và nghệ thuật thủ công đã được bảo tồn qua thời gian.",
         "img": "/assets/images/trau_no_logo.jpg"
       },
       {
-        "title": "Unmatched Taste",
-        "description": "With the spiciness of chili combined with the heat of ginger, along with the seasoning of local seeds and the smoky aroma of firewood, these elements create the distinctive flavor of Tây Bắc's traditional smoked buffalo meat. When talking about buffalo meat from the Tây Bắc region, one must mention BacPack's smoked buffalo meat, a prime representation of this region's specialty.",
+        "title": "Hương vị Tây Bắc",
+        "description": "Vị cay của ớt kết hợp với hơi nóng của gừng, cùng với gia vị từ các hạt địa phương và hương thơm khói của củi tạo nên hương vị đặc trưng của thịt trâu hun khói truyền thống Tây Bắc. Khi nhắc đến thịt trâu vùng Tây Bắc, không thể không nhắc đến thịt trâu khô BacPack, đại diện tiêu biểu cho đặc sản của vùng đất này.",
         "img": "/assets/images/trau2.jpg"
       }
     ]
   },
   "features": {
-    "title": "BacPack story",
-    "subtitle": "A small start up with big goals!",
-    "subtitle2": "Our Mission",
-    "description": "Our startup is dedicated to preserving and sharing the rich culinary heritage of Vietnam's Tây Bắc region. By combining locally sourced ingredients with expert craftsmanship, we deliver an authentic taste experience that embodies the flavors of the mountains. Our mission is to bring this unique, artisanal delicacy to food lovers everywhere, while supporting local farmers and promoting sustainable practices.",
+    "title": "Câu chuyện BacPack",
+    "subtitle": "Một khởi nghiệp nhỏ với mục tiêu lớn!",
+    "subtitle2": "Sứ mệnh của chúng tôi",
+    "description": "Khởi nghiệp của chúng tôi tập trung vào việc bảo tồn và chia sẻ di sản ẩm thực phong phú của vùng Tây Bắc Việt Nam. Bằng cách kết hợp các nguyên liệu địa phương với sự khéo léo thủ công, chúng tôi mang đến trải nghiệm hương vị chân thực, tượng trưng cho hương vị của núi rừng. Sứ mệnh của chúng tôi là mang món ăn độc đáo và thủ công này đến với những người yêu ẩm thực khắp nơi, đồng thời hỗ trợ nông dân địa phương và thúc đẩy các hoạt động bền vững.",
     "items": [
       {
-        "name": "Promote and Showcase Culture and Craftsmanship",
-        "description": "To introduce and celebrate the rich, diverse, and authentic flavors of Vietnamese cuisine to a global audience.",
+        "name": "Quảng bá văn hóa và thủ công",
+        "description": "Giới thiệu và tôn vinh hương vị phong phú, đa dạng và chân thực của ẩm thực Việt Nam đến với khán giả toàn cầu.",
         "icon": "/assets/images/tick.png"
       },
       {
-        "name": "Certified High-Quality, Locally Sourced Ingredients",
-        "description": "To provide certified high-quality, locally sourced ingredients that highlight regional specialties and authentic flavors. Supporting local farmers, sustainable practices, and fair trade.",
+        "name": "Nguyên liệu địa phương chất lượng cao",
+        "description": "Cung cấp nguyên liệu chất lượng cao, có chứng nhận, được lấy từ địa phương để làm nổi bật các đặc sản vùng miền và hương vị chân thực. Hỗ trợ nông dân địa phương, các hoạt động bền vững và thương mại công bằng.",
         "icon": "/assets/images/tick.png"
       },
       {
-        "name": "Inspire and Delight Customers",
-        "description": "To inspire and delight customers through distinctive and meaningful culinary experiences that reflect the essence of Vietnamese cuisine.",
+        "name": "Truyền cảm hứng và làm hài lòng khách hàng",
+        "description": "Truyền cảm hứng và mang lại niềm vui cho khách hàng thông qua những trải nghiệm ẩm thực đặc biệt và ý nghĩa, phản ánh tinh hoa của ẩm thực Việt Nam.",
         "icon": "/assets/images/tick.png"
       },
       {
-        "name": "Celebrate and Promote Local Artisans",
-        "description": "To celebrate and promote local Vietnamese artisans and producers, ensuring their traditions and skills are preserved and appreciated.",
+        "name": "Tôn vinh các nghệ nhân địa phương",
+        "description": "Tôn vinh và quảng bá các nghệ nhân và nhà sản xuất địa phương của Việt Nam, đảm bảo rằng các truyền thống và kỹ năng của họ được bảo tồn và đánh giá cao.",
         "icon": "/assets/images/tick.png"
       }
     ]
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Giá cả",
     "items": [
       {
         "name": "300gr",
         "price": "280,000 VNĐ",
         "priceDetails": "",
         "features": [
-          "Basic Package",
-          "Basic resealable pouch",
-          "Premium locally sourced meat",
-          "Ideal for individual snacking"
+          "Gói cơ bản",
+          "Túi có khóa kéo cơ bản",
+          "Thịt cao cấp từ địa phương",
+          "Lý tưởng cho bữa ăn nhẹ cá nhân"
         ]
       },
       {
         "name": "500gr",
         "price": "450,000 VNĐ",
         "priceDetails": "",
-
         "features": [
-          "Best seller",
-          "Premium resealable pouch",
-          "Premium locally sourced meat",
-          "Perfect for sharing or gifting"
+          "Gói bán chạy nhất",
+          "Túi có khóa kéo cao cấp",
+          "Thịt cao cấp từ địa phương",
+          "Hoàn hảo để chia sẻ hoặc làm quà tặng"
         ]
       },
       {
-        "name": "1000gr",
+        "name": "1kg",
         "price": "820,000 VNĐ",
         "priceDetails": "",
         "features": [
-          "Bang for bucks",
-          "Deluxe packaging",
-          "Premium locally sourced meat",
-          "Best value for families or large gatherings"
+          "Gói tiết kiệm",
+          "Bao bì sang trọng",
+          "Thịt cao cấp từ địa phương",
+          "Phù hợp cho gia đình hoặc các buổi tụ họp lớn"
         ]
       }
     ]
@@ -121,24 +119,24 @@
   "about": {
     "sections": [
       {
-        "name": "Something",
+        "name": "Một cái gì đó",
         "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "content": "Một thực tế đã được thiết lập từ lâu rằng người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của trang khi xem bố cục của nó. Mục đích của việc sử dụng Lorem Ipsum là nó có sự phân bổ chữ cái gần như bình thường, thay vì sử dụng 'Nội dung ở đây, nội dung ở đây', khiến nó trông giống như tiếng Anh có thể đọc được."
       },
       {
-        "name": "Something",
+        "name": "Một cái gì đó",
         "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "content": "Một thực tế đã được thiết lập từ lâu rằng người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của trang khi xem bố cục của nó. Mục đích của việc sử dụng Lorem Ipsum là nó có sự phân bổ chữ cái gần như bình thường, thay vì sử dụng 'Nội dung ở đây, nội dung ở đây', khiến nó trông giống như tiếng Anh có thể đọc được."
       },
       {
-        "name": "Something",
+        "name": "Một cái gì đó",
         "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "content": "Một thực tế đã được thiết lập từ lâu rằng người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của trang khi xem bố cục của nó. Mục đích của việc sử dụng Lorem Ipsum là nó có sự phân bổ chữ cái gần như bình thường, thay vì sử dụng 'Nội dung ở đây, nội dung ở đây', khiến nó trông giống như tiếng Anh có thể đọc được."
       },
       {
-        "name": "Something",
+        "name": "Một cái gì đó",
         "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "content": "Một thực tế đã được thiết lập từ lâu rằng người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của trang khi xem bố cục của nó. Mục đích của việc sử dụng Lorem Ipsum là nó có sự phân bổ chữ cái gần như bình thường, thay vì sử dụng 'Nội dung ở đây, nội dung ở đây', khiến nó trông giống như tiếng Anh có thể đọc được."
       }
     ],
     "socialMedia": {

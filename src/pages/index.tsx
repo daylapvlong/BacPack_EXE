@@ -9,10 +9,12 @@ import MainHero from '../components/MainHero';
 import MainHeroImage from '../components/MainHeroImage';
 import Pricing from '../components/Pricing';
 import Product from '../components/Product';
+import BackToTopButton from '../components/BackToTop';
 
 const App = () => {
   return (
     <div className={`bg-background grid gap-y-16 overflow-hidden`}>
+      <BackToTopButton />
       <div className={`relative bg-background`}>
         <div className="max-w-8xl mx-auto h-screen">
           <div

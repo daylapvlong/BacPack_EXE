@@ -62,7 +62,7 @@ const Menu = () => {
                 href="https://www.facebook.com/profile.php?id=61565852317212"
                 className={`font-medium text-primary hover:text-secondary`}
               >
-                Contact us
+                Liên hệ
               </a>
             </div>
           </nav>
