@@ -31,12 +31,12 @@
       "href": "/"
     },
     "secondaryAction": {
-      "text": "Giới thiệu về giá cả",
+      "text": "Sản phẩm BacPack",
       "href": "/"
     }
   },
   "product": {
-    "title": "Về sản phẩm của chúng tôi",
+    "title": "Sản phẩm chúng tôi",
     "items": [
       {
         "title": "Chất lượng thủ công",
@@ -51,8 +51,9 @@
     ]
   },
   "features": {
+    "logo": "/assets/images/bacpack.jpg",
     "title": "Câu chuyện BacPack",
-    "subtitle": "Một khởi nghiệp nhỏ với mục tiêu lớn!",
+    "subtitle": "Một Startup nhỏ với mục tiêu lớn!",
     "subtitle2": "Sứ mệnh của chúng tôi",
     "description": "Khởi nghiệp của chúng tôi tập trung vào việc bảo tồn và chia sẻ di sản ẩm thực phong phú của vùng Tây Bắc Việt Nam. Bằng cách kết hợp các nguyên liệu địa phương với sự khéo léo thủ công, chúng tôi mang đến trải nghiệm hương vị chân thực, tượng trưng cho hương vị của núi rừng. Sứ mệnh của chúng tôi là mang món ăn độc đáo và thủ công này đến với những người yêu ẩm thực khắp nơi, đồng thời hỗ trợ nông dân địa phương và thúc đẩy các hoạt động bền vững.",
     "items": [
@@ -140,7 +141,7 @@
       }
     ],
     "socialMedia": {
-      "facebook": "https://www.facebook.com/profile.php?id=61565852317212",
+      "facebook": "https://www.facebook.com/BacPackTayBac",
       "instagram": "https://www.instagram.com/bacpack6/",
       "zalo": "#"
     }

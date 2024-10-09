@@ -1,15 +1,15 @@
 import React from 'react';
 
-import About from '../components/About';
-import Analytics from '../components/Analytics';
-import BackToTopButton from '../components/BackToTop';
-import Features from '../components/Features';
-import Header from '../components/Header';
-import LazyShow from '../components/LazyShow';
-import MainHero from '../components/MainHero';
-import MainHeroImage from '../components/MainHeroImage';
-import Pricing from '../components/Pricing';
-import Product from '../components/Product';
+import About from '../components/main/About';
+import Analytics from '../components/main/Analytics';
+import BackToTopButton from '../components/main/BackToTop';
+import Features from '../components/main/Features';
+import Header from '../components/main/Header';
+import LazyShow from '../components/main/LazyShow';
+import MainHero from '../components/main/MainHero';
+import MainHeroImage from '../components/main/MainHeroImage';
+import TestimonialSlider from '../components/main/Customer';
+import GallerySection from '../components/main/Gallery';
 
 const App = () => {
   return (
@@ -26,25 +26,24 @@ const App = () => {
         </div>
         <MainHeroImage />
       </div>
-      {/* <Canvas /> */}
-      <LazyShow>
-        <>
-          <Product />
-          {/* <Canvas /> */}
-        </>
-      </LazyShow>
+      
       <LazyShow>
         <>
           <Features />
-          {/* <Canvas /> */}
         </>
       </LazyShow>
       <LazyShow>
-        <Pricing />
+        <>
+          <TestimonialSlider />
+        </>
       </LazyShow>
       <LazyShow>
         <>
-          {/* <Canvas /> */}
+          <GallerySection />
+        </>
+      </LazyShow>
+      <LazyShow>
+        <>
           <About />
         </>
       </LazyShow>
