@@ -1,4 +1,5 @@
 import Image from "next/image"
+
 import Divider from "./main/Divider"
 
 export default function GallerySection() {

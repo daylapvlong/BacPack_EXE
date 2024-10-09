@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Divider from "./Divider"
-import { text } from "stream/consumers"
 
 export default function GallerySection() {
   const galleryItems = [

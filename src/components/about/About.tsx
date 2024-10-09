@@ -1,6 +1,6 @@
 import React from 'react';
-import config from '../../config/index.json';
 
+import config from '../../config/index.json';
 import Divider from '../main/Divider';
 
 const AboutUs = () => {
@@ -30,13 +30,7 @@ const AboutUs = () => {
               AAAAAAAAAAAAAAAAA
             </p>
             <p className="text-lg lg:text-right sm:text-center text-muted-foreground">
-              At TechInnovate, we're on a mission to push the boundaries of technology and create solutions that make a
-              real difference in people's lives. Our team of passionate innovators works tirelessly to develop cutting-edge
-              products that solve complex problems and open up new possibilities. At TechInnovate, we're on a mission to push the boundaries of technology and create solutions that make a
-              real difference in people's lives. Our team of passionate innovators works tirelessly to develop cutting-edge
-              products that solve complex problems and open up new possibilities. At TechInnovate, we're on a mission to push the boundaries of technology and create solutions that make a
-              real difference in people's lives. Our team of passionate innovators works tirelessly to develop cutting-edge
-              products that solve complex problems.
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
             </p>
           </div>
         </div>

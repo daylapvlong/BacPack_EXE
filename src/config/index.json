@@ -6,15 +6,11 @@
   "navigation": [
     {
       "name": "Sản phẩm",
-      "href": "product"
+      "href": "/product"
     },
     {
       "name": "Về chúng tôi",
-      "href": "features"
-    },
-    {
-      "name": "Giá cả",
-      "href": "pricing"
+      "href": "/about"
     }
   ],
   "callToAction": {
