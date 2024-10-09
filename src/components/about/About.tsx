@@ -15,22 +15,17 @@ const AboutUs = () => {
         </header>
 
         <div className="grid gap-12 md:grid-cols-2 items-center mb-12">
-          <div className="relative rounded-lg overflow-hidden">
-            <video
-              className="w-full h-full object-contain"
-              poster="/placeholder.svg?height=400&width=600"
-              controls
-            >
-              <source src="/assets/vid.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="relative rounded-lg overflow-hidden mt-2">
+            <img src="/assets/gif.gif" alt="GIF" className="w-full h-auto shadow-xl" />
           </div>
           <div className="space-y-4">
-            <p className="mt-2 mb-8 text-3xl text-right leading-8 font-extrabold tracking-tight text-primary sm:text-4xl">
-              AAAAAAAAAAAAAAAAA
+            <p className="mt-2 mb-8 text-3xl text-right leading-8 font-extrabold tracking-tight text-primary sm:text-4xl max-w-2">
+              Điều gì làm BacPack đặc biệt
             </p>
             <p className="text-lg lg:text-right sm:text-center text-muted-foreground">
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            Thịt trâu gác bếp của chúng tôi nổi bật nhờ nguồn nguyên liệu sạch, chất lượng cao từ nông trại địa phương, giúp hỗ trợ cộng đồng và đảm bảo an toàn thực phẩm. 
+            Quy trình chế biến thủ công, gác bếp theo phương pháp gia truyền, giữ trọn hương vị đặc trưng của núi rừng. 
+            Sản phẩm không chỉ có bao bì sang trọng, tiện lợi mà còn phù hợp làm quà tặng và tiêu dùng hằng ngày, mang lại trải nghiệm tuyệt vời cho khách hàng.
             </p>
           </div>
         </div>
