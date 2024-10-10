@@ -5,7 +5,6 @@ import Analytics from '../../components/main/Analytics';
 import BackToTopButton from '../../components/main/BackToTop';
 import LazyShow from '../../components/main/LazyShow';
 import AboutUs from '../../components/about/About';
-import Product from '../../components/main/Product';
 import MenuAbout from '../../components/about/HeaderAbout';
 
 const AboutApp = () => {
@@ -22,11 +21,13 @@ const AboutApp = () => {
       />
       <div className="absolute inset-0 bg-black bg-opacity-40" /> {/* Optional overlay for better text visibility */}
       <div className="relative z-10 h-full">
-        <MenuAbout />
-        <div className="container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-2xl text-white">
-            <h1 className="text-6xl font-extrabold mb-4">BacPack chào bạn</h1>
-            <p className="text-4xl font-bold">Chúng mình mang hương vị núi rừng trong từng thớ thịt.</p>
+        <div className='max-w-8xl mx-auto h-screen'>
+          <MenuAbout />
+          <div className="container mx-auto px-4 h-full flex items-center">
+            <div className="max-w-2xl text-white">
+              <h1 className="text-6xl font-extrabold mb-4">BacPack chào bạn</h1>
+              <p className="text-4xl font-bold">Chúng mình mang hương vị núi rừng trong từng thớ thịt.</p>
+            </div>
           </div>
         </div>
       </div>

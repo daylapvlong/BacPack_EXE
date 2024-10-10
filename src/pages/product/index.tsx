@@ -3,8 +3,9 @@ import React from 'react';
 import About from '../../components/main/About';
 import Analytics from '../../components/main/Analytics';
 import BackToTopButton from '../../components/main/BackToTop';
-import Header from '../../components/main/Header';
+import Shopping from '../../components/product/Shopping';
 import LazyShow from '../../components/main/LazyShow';
+import HeaderProduct from '../../components/product/HeaderProduct';
 
 const ProductApp = () => {
   return (
@@ -13,9 +14,10 @@ const ProductApp = () => {
       <div className={`relative bg-background`}>
         <div className="max-w-8xl mx-auto h-screen">
           <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 h-screen lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 h-screen lg:w-full lg:pb-28 xl:pb-32`}
           >
-            <Header />
+            <HeaderProduct />
+            <Shopping />
           </div>
         </div>
       </div>
