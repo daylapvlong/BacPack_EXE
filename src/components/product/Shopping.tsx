@@ -1,18 +1,21 @@
 import { useState } from 'react'
-import { Heart, ShoppingCart, Minus, Plus, Store, Truck } from 'lucide-react'
+import { ShoppingCart, Minus, Plus, Store, Truck } from 'lucide-react'
 
 export default function Shopping() {
-  const [quantity, setQuantity] = useState(1)
-  const [selectedAmount, setSelectedAmount] = useState('300gr')
+  type Amount = '300gr' | '500gr' | '1kg';
+
+  const [quantity, setQuantity] = useState(1) 
+  const [selectedAmount, setSelectedAmount] = useState<Amount>('300gr');
   const [selectedImage, setImageSource] = useState('/assets/product/product1.png');
-  const [activeTab, setActiveTab] = useState('details')
 
-  const basePrice = 0
-  const amountPrices = { '300gr': 280.000, '500gr': 450.000, '1kg': 820.000 }
+  const amountPrices = { '300gr': '280.000', '500gr': '450.000', '1kg': '820.000' }
 
-  const calculatePrice = () => {
-    return (basePrice + amountPrices[selectedAmount]).toFixed(2)
-  }
+  const calculatePrice = amountPrices[selectedAmount]
+  const handleAmountChange = (amount: string) => {
+    if (['300gr', '500gr', '1kg'].includes(amount)) {
+      setSelectedAmount(amount as Amount);
+    }
+  };
 
   const incrementQuantity = () => setQuantity(prev => prev + 1)
   const decrementQuantity = () => setQuantity(prev => prev > 1 ? prev - 1 : 1)
@@ -49,13 +52,13 @@ export default function Shopping() {
           </div>
 
           <div className="flex items-baseline space-x-2">
-            <span className="text-3xl font-bold text-primary">{calculatePrice()} VND</span>
+            <span className="text-3xl font-bold text-primary">{calculatePrice} VND</span>
           </div>
           <ul>
             {selectedAmount === '300gr' && (
               <>
                 <li className="text-gray-600"><strong>Gói cơ bản:</strong> Đây là lựa chọn tuyệt vời cho những ai muốn thưởng thức sản phẩm chất lượng mà không cần quá cầu kỳ.</li>
-                <li className="text-gray-600"><strong>Túi hút chân không:</strong> Sản phẩm được đóng gói trong một túi hút chân không an toàn, giúp bảo quản tốt hơn và dễ dàng mang theo.</li>
+                <li className="text-gray-600"><strong>Túi hút chân không:</strong> Sản phẩm được đóng gói trong túi hút chân không an toàn, giúp bảo quản tốt hơn và dễ dàng mang theo.</li>
                 <li className="text-gray-600"><strong>Thịt cao cấp từ địa phương:</strong> Thịt được chọn lọc kỹ lưỡng từ những nhà sản xuất địa phương, đảm bảo chất lượng và độ tươi ngon.</li>
                 <li className="text-gray-600"><strong>Lý tưởng cho bữa ăn nhẹ cá nhân:</strong> Gói này rất phù hợp cho những bữa ăn nhẹ khi di chuyển hoặc khi bạn cần bổ sung năng lượng nhanh chóng trong suốt cả ngày.</li>
               </>
@@ -63,7 +66,7 @@ export default function Shopping() {
             {selectedAmount === '500gr' && (
                 <>
                     <li className="text-gray-600"><strong>Gói bán chạy nhất:</strong> Đây là lựa chọn hàng đầu cho những ai yêu thích sản phẩm chất lượng và được ưa chuộng nhất.</li>
-                    <li className="text-gray-600"><strong>Túi có khóa kéo cao cấp:</strong> Sản phẩm được đóng gói trong một túi sang trọng với khóa kéo, giúp bảo quản tốt hơn và tạo cảm giác tinh tế.</li>
+                    <li className="text-gray-600"><strong>Túi hút chân không:</strong> Sản phẩm được đóng gói trong túi hút chân không an toàn, giúp bảo quản tốt hơn và tạo cảm giác tinh tế.</li>
                     <li className="text-gray-600"><strong>Thịt cao cấp từ địa phương:</strong> Thịt được chọn lọc kỹ lưỡng từ những nhà sản xuất địa phương, đảm bảo chất lượng và độ tươi ngon.</li>
                     <li className="text-gray-600"><strong>Hoàn hảo để chia sẻ hoặc làm quà tặng:</strong> Gói này rất phù hợp để chia sẻ với bạn bè hoặc người thân, hoặc dùng làm món quà ý nghĩa trong các dịp đặc biệt.</li>
                 </>
@@ -90,7 +93,7 @@ export default function Shopping() {
                     name="amount"
                     value={amount}
                     checked={selectedAmount === amount}
-                    onChange={() => setSelectedAmount(amount)}
+                    onChange={() => handleAmountChange(amount)}
                     className="sr-only"
                   />
                   <span className={`w-6 h-6 rounded-full border ${selectedAmount === amount ? 'border-primary ring-2 ring-primary' : 'border-gray-300'}`} style={{backgroundColor: amount.toLowerCase()}}></span>
