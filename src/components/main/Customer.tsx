@@ -11,31 +11,31 @@ const testimonials = [
   {
     name: 'Nguyễn Văn Hải',
     role: 'Doanh nhân',
-    image: '/../public/assets/customer/profile2.jpg',
+    image: '/assets/customer/profile2.jpg',
     content: 'Thịt trâu gác bếp Tây Bắc thật sự mang lại hương vị độc đáo, đậm đà và khác biệt. Món ăn này không chỉ ngon mà còn gợi nhớ về vùng núi Tây Bắc hùng vĩ.'
   },
   {
     name: 'Trần Thu Hương',
     role: 'Nhân viên văn phòng',
-    image: '/../public/assets/customer/profile1.jpg',
+    image: '/assets/customer/profile1.jpg',
     content: 'Tôi đã thử rất nhiều loại thịt khô, nhưng thịt trâu gác bếp Tây Bắc có hương vị đặc trưng không lẫn vào đâu được. Đậm vị và không quá khô, rất phù hợp cho các bữa tiệc.'
   },
   {
     name: 'Phạm Minh Quân',
     role: 'Nhân viên văn phòng',
-    image: '/../public/assets/customer/profile5.jpg',
+    image: '/assets/customer/profile5.jpg',
     content: 'Thịt trâu gác bếp Tây Bắc là món nhắm hoàn hảo cho những buổi gặp gỡ bạn bè. Vị cay nhẹ, hương thơm của khói bếp và vị ngọt tự nhiên của thịt làm cho món ăn này khó quên.'
   },
   {
     name: 'Lê Thanh Hòa',
     role: 'Kinh doanh tự do',
-    image: '/../public/assets/customer/profile3.jpg',
+    image: '/assets/customer/profile3.jpg',
     content: 'Thịt trâu gác bếp Tây Bắc mang đến trải nghiệm hương vị rất đặc biệt. Tôi đặc biệt thích cách thịt được ướp đậm đà và mùi thơm từ cách nướng bằng bếp củi truyền thống.'
   },
   {
     name: 'Nguyễn Thị Mai',
     role: 'Giáo viên',
-    image: '/../public/assets/customer/profile4.jpg',
+    image: '/assets/customer/profile4.jpg',
     content: 'Tôi đã mua thịt trâu gác bếp Tây Bắc để làm quà biếu, và ai cũng khen ngợi món này. Chất lượng cao, vị ngon đậm đà, rất xứng đáng để thưởng thức hoặc tặng cho người thân.'
   },
   // Add more testimonials as needed

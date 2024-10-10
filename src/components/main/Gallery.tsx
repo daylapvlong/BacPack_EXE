@@ -3,15 +3,15 @@ import Divider from "./Divider"
 
 export default function GallerySection() {
   const galleryItems = [
-    { src: "/../public/assets/gallery/gallery10.png", alt: "Gallery image 1", className: "col-span-1 row-span-2" },
-    { src: "/../public/assets/gallery/gallery5.jpg", alt: "Gallery image 2", className: "col-span-1 row-span-2" },
-    { src: "/../public/assets/gallery/gallery6.jpg", alt: "Gallery image 3", className: "lg:col-span-1 row-span-2 sm:col-span-2" },
-    { src: "/../public/assets/gallery/gallery4.jpg", alt: "Gallery image 4", className: "col-span-2 row-span-2" },
-    { src: "/../public/assets/gallery/gallery2.jpg", alt: "Gallery image 5", className: "col-span-1 row-span-1" },
-    { src: "/../public/assets/gallery/gallery3.jpg", alt: "Gallery image 6", className: "col-span-1 row-span-1" },
-    { src: "/../public/assets/gallery/gallery9.png", alt: "Gallery image 6", className: "col-span-1 row-span-2" },
-    { src: "/../public/assets/gallery/gallery8.jpg", alt: "Gallery image 5", className: "col-span-1 row-span-2" },
-    { src: "/../public/assets/gallery/gallery7.jpg", alt: "Gallery image 6", className: "lg:col-span-1 row-span-2 sm:col-span-2" },
+    { src: "/assets/gallery/gallery10.png", alt: "Gallery image 1", className: "col-span-1 row-span-2" },
+    { src: "/assets/gallery/gallery5.jpg", alt: "Gallery image 2", className: "col-span-1 row-span-2" },
+    { src: "/assets/gallery/gallery6.jpg", alt: "Gallery image 3", className: "lg:col-span-1 row-span-2 sm:col-span-2" },
+    { src: "/assets/gallery/gallery4.jpg", alt: "Gallery image 4", className: "col-span-2 row-span-2" },
+    { src: "/assets/gallery/gallery2.jpg", alt: "Gallery image 5", className: "col-span-1 row-span-1" },
+    { src: "/assets/gallery/gallery3.jpg", alt: "Gallery image 6", className: "col-span-1 row-span-1" },
+    { src: "/assets/gallery/gallery9.png", alt: "Gallery image 6", className: "col-span-1 row-span-2" },
+    { src: "/assets/gallery/gallery8.jpg", alt: "Gallery image 5", className: "col-span-1 row-span-2" },
+    { src: "/assets/gallery/gallery7.jpg", alt: "Gallery image 6", className: "lg:col-span-1 row-span-2 sm:col-span-2" },
   ]
 
   return (
