@@ -66,7 +66,7 @@ const Product = () => {
               </h3>
               <p className={`text-gray-600`}>{secondItem?.description}</p>
               <div className="">
-                <Link href="/about" passHref>
+                <Link href="/product" passHref>
                   <motion.a
                     className="px-6 py-3 bg-primary text-white rounded-full font-semibold shadow-lg transition-colors duration-300 hover:bg-primary/90"
                     whileHover={{ scale: 1.05 }}
