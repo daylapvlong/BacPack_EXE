@@ -10,6 +10,7 @@ import MainHero from '../components/main/MainHero';
 import MainHeroImage from '../components/main/MainHeroImage';
 import TestimonialSlider from '../components/main/Customer';
 import GallerySection from '../components/main/Gallery';
+import Product from '../components/main/Product';
 
 const App = () => {
   return (
@@ -30,6 +31,11 @@ const App = () => {
       <LazyShow>
         <>
           <Features />
+        </>
+      </LazyShow>
+      <LazyShow>
+        <>
+          <Product />
         </>
       </LazyShow>
       <LazyShow>

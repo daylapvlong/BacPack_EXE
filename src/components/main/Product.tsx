@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import config from '../../config/index.json';
-import Divider from '../main/Divider';
+import Divider from './Divider';
 import Link from 'next/link';
 
 const Product = () => {
