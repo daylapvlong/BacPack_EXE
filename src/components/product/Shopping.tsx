@@ -1,12 +1,25 @@
 import { useState } from 'react'
-import { ShoppingCart, Minus, Plus, Store, Truck } from 'lucide-react'
+import { Minus, Plus, Store, Truck } from 'lucide-react'
+import { Button } from "@/src/components/ui/button"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/src/components/ui/dialog"
+import { Input } from "@/src/components/ui/input"
+import { Label } from "@/src/components/ui/label"
 
 export default function Shopping() {
   type Amount = '300gr' | '500gr' | '1kg';
 
-  const [quantity, setQuantity] = useState(1) 
+  const [selectedQuantity, setQuantity] = useState(1) 
   const [selectedAmount, setSelectedAmount] = useState<Amount>('300gr');
   const [selectedImage, setImageSource] = useState('/assets/product/product1.png');
+  const [open, setOpen] = useState(false)
 
   const amountPrices = { '300gr': '280.000', '500gr': '450.000', '1kg': '820.000' }
 
@@ -17,8 +30,55 @@ export default function Shopping() {
     }
   };
 
-  const incrementQuantity = () => setQuantity(prev => prev + 1)
-  const decrementQuantity = () => setQuantity(prev => prev > 1 ? prev - 1 : 1)
+  const incrementQuantity = () => setQuantity(
+    prev => prev + 1
+  );
+  const decrementQuantity = () => setQuantity(prev => prev > 1 ? prev - 1 : 1);
+
+  // handle form
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    address: "",
+    amount: selectedAmount,
+    quantity: selectedQuantity,
+  })
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    const data = {
+      spreadsheetId: process.env.NEXT_PUBLIC_SHEET_ID,
+      // spreadsheetId: '1UgCJsgIkFqdSW2b4wNedTYO0rdLuuCC46g3SQMcdsE0',
+      range: 'Sheet1!A1',
+      values: [formData.fullName, `\`${formData.phoneNumber}`, formData.address, formData.amount, formData.quantity], // Example data
+    };
+    console.log(process.env.SHEET_ID);
+    try {
+      const response = await fetch('/api/append-data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (response.ok) {
+        const result = await response.json();
+        console.log('Success:', result.message);
+      } else {
+        const errorResult = await response.json();
+        console.error('Failed:', errorResult.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+
+    e.preventDefault();
+    setOpen(false)
+  }
 
   return (
     <div className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12">
@@ -103,19 +163,100 @@ export default function Shopping() {
             </div>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 relative">
             <div className="flex items-center border rounded-md h-full">
               <button onClick={decrementQuantity} className="px-2 py-1 text-gray-600 hover:bg-gray-100">
                 <Minus className="h-4 w-4" />
               </button>
-              <span className="w-12 text-center">{quantity}</span>
+              <span className="w-12 text-center">{selectedQuantity}</span>
               <button onClick={incrementQuantity} className="px-2 py-1 text-gray-600 hover:bg-gray-100">
                 <Plus className="h-4 w-4" />
               </button>
             </div>
-            <button className="flex-1 bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">
-              <ShoppingCart className="inline-block mr-2 h-4 w-4" /> Order now!
-            </button>
+
+            <Dialog open={open} onOpenChange={setOpen}>
+              <DialogTrigger asChild className="flex-1 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition duration-300">
+                <Button variant="outline">Order now!</Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[425px]">
+                <DialogHeader>
+                  <DialogTitle>Enter Details</DialogTitle>
+                  <DialogDescription>
+                    Please fill in the following information. Click submit when you're done.
+                  </DialogDescription>
+                </DialogHeader>
+                <form onSubmit={handleSubmit}>
+                  <div className="grid gap-4 py-4">
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="fullName" className="text-right">
+                        Full Name
+                      </Label>
+                      <Input
+                        id="fullName"
+                        name="fullName"
+                        required
+                        value={formData.fullName}
+                        onChange={handleInputChange}
+                        className="col-span-3"
+                      />
+                    </div>
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="phoneNumber" className="text-right">
+                        Phone Number
+                      </Label>
+                      <Input
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        required
+                        value={formData.phoneNumber}
+                        onChange={handleInputChange}
+                        className="col-span-3"
+                      />
+                    </div>
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="address" className="text-right">
+                        Address
+                      </Label>
+                      <Input
+                        id="address"
+                        name="address"
+                        required
+                        value={formData.address}
+                        onChange={handleInputChange}
+                        className="col-span-3"
+                      />
+                    </div>
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="amount" className="text-right">
+                        Amount
+                      </Label>
+                      <Input
+                        id="amount"
+                        name="amount"
+                        readOnly
+                        value={selectedAmount}
+                        className="col-span-3"
+                      />
+                    </div>
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="quantity" className="text-right">
+                        Quantity
+                      </Label>
+                      <Input
+                        id="quantity"
+                        name="quantity"
+                        readOnly 
+                        value={selectedQuantity}
+                        className="col-span-3"
+                      />
+                    </div>
+                  </div>
+                  <DialogFooter>
+                    <Button type="submit">Submit</Button>
+                  </DialogFooter>
+                </form>
+              </DialogContent>
+            </Dialog>
           </div>
 
           <div className="bg-white border rounded-lg p-4 space-y-2">
