@@ -4,14 +4,8 @@ import { Button } from "@/src/components/ui/button"
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/src/components/ui/dialog"
-import { Input } from "@/src/components/ui/input"
-import { Label } from "@/src/components/ui/label"
 
 export default function Shopping() {
   type Amount = '300gr' | '500gr' | '1kg';
@@ -34,51 +28,6 @@ export default function Shopping() {
     prev => prev + 1
   );
   const decrementQuantity = () => setQuantity(prev => prev > 1 ? prev - 1 : 1);
-
-  // handle form
-  const [formData, setFormData] = useState({
-    fullName: "",
-    phoneNumber: "",
-    address: "",
-    amount: selectedAmount,
-    quantity: selectedQuantity,
-  })
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    const data = {
-      spreadsheetId: process.env.NEXT_PUBLIC_SHEET_ID,
-      // spreadsheetId: '1UgCJsgIkFqdSW2b4wNedTYO0rdLuuCC46g3SQMcdsE0',
-      range: 'Sheet1!A1',
-      values: [formData.fullName, `\`${formData.phoneNumber}`, formData.address, formData.amount, formData.quantity], // Example data
-    };
-    console.log(process.env.SHEET_ID);
-    try {
-      const response = await fetch('/api/append-data', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-  
-      if (response.ok) {
-        const result = await response.json();
-        console.log('Success:', result.message);
-      } else {
-        const errorResult = await response.json();
-        console.error('Failed:', errorResult.message);
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
-
-    e.preventDefault();
-    setOpen(false)
-  }
 
   return (
     <div className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12">
@@ -164,7 +113,7 @@ export default function Shopping() {
           </div>
 
           <div className="flex items-center space-x-4 relative">
-            <div className="flex items-center border rounded-md h-full">
+            {/* <div className="flex items-center border rounded-md h-full">
               <button onClick={decrementQuantity} className="px-2 py-1 text-gray-600 hover:bg-gray-100">
                 <Minus className="h-4 w-4" />
               </button>
@@ -172,9 +121,9 @@ export default function Shopping() {
               <button onClick={incrementQuantity} className="px-2 py-1 text-gray-600 hover:bg-gray-100">
                 <Plus className="h-4 w-4" />
               </button>
-            </div>
+            </div> */}
 
-            <Dialog open={open} onOpenChange={setOpen}>
+            {/* <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild className="flex-1 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition duration-300">
                 <Button variant="outline">Order now!</Button>
               </DialogTrigger>
@@ -255,6 +204,25 @@ export default function Shopping() {
                     <Button type="submit">Submit</Button>
                   </DialogFooter>
                 </form>
+              </DialogContent>
+            </Dialog> */}
+
+            <Dialog open={open} onOpenChange={setOpen}>
+              <DialogTrigger asChild className="flex-1 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition duration-300">
+                <Button variant="outline">Order now!</Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[700px] p-9">
+                <div className="relative overflow-hidden w-full h-0 pb-[150%]">
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdnn5y2C8FInzl7Ic7-LmOuOlUDFJhs5NHouYR4LrXiSosqKA/viewform?embedded=true"
+                    className="absolute top-0 left-0 w-full h-full"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                  >
+                    Loading…
+                  </iframe>
+                </div>
               </DialogContent>
             </Dialog>
           </div>
